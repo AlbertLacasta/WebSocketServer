@@ -1,14 +1,9 @@
 /**
  * Import WebSocket and Server
  */
-import WebSocket = require("ws");
-import {Server} from "ws";
 
-/**
- *
- */
 const express = require('express');
-const webSocket = require('ws');
+const webSocket = require("ws");
 const socketServer = require('ws').Server;
 
 /**
@@ -19,12 +14,12 @@ const server = express().listen(3000);
 /**
  * Create new socket server
  */
-const wss: Server = new socketServer({ server });
+const wss = new socketServer({ server });
 
 /**
  * WebSocket Server on connection
  */
-wss.on('connection', (ws: WebSocket ) => {
+wss.on('connection', (ws) => {
     console.log("[Server] A client was connected.")
 
     /**
