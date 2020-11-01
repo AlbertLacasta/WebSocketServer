@@ -2,7 +2,7 @@
   "name": "websocketserver",
   "version": "1.0.0",
   "description": "A webSocket server using npm",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,9 +17,7 @@
   },
   "homepage": "https://github.com/AlbertLacasta/WebSocketServer#readme",
   "dependencies": {
-    "@types/ws": "^7.2.9",
     "express": "^4.17.1",
-    "typescript": "^4.0.5",
     "ws": "^7.3.1"
   },
   "devDependencies": {

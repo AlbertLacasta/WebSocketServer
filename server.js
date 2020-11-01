@@ -10,7 +10,7 @@ const socketServer = require('ws').Server;
  * Express listen on port 3000
  */
 const server = express().listen(3000);
-
+console.log("[Server] Listen on port 3000");
 /**
  * Create new socket server
  */
